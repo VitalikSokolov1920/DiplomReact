@@ -10,6 +10,7 @@ export default class Header extends React.Component {
         const onKeyPress = (e) => {
             if (e.key === 'Enter') {
                 setRequest(e.target.value);
+                e.target.value = '';
             }
         };
 
